@@ -1,34 +1,3 @@
-<!-- <div class="app">
-  <h1>Hello This is Mahir's Website</h1>
-  <h3>Movie Application using Angular</h3>
-
-  <div class="search">
-      <input type="text" placeholder="Search for Movies" [(ngModel)]="searchTerm"(keyup.enter)="onSearch()" />
-      <img onkeypress= "https:media.geeksforgeeks.org/wp-content/uploads/20230626112934/search.png"
-           alt="search icon"
-          (click)="onSearch()" />
-  </div>
-  <div *ngIf="movies.length > 0; else noMovies" class="container">
-      <div *ngFor="let movie of movies" class="movie">
-          <div>
-              <p>{{ movie.Title }}</p>
-          </div>
-          <div>
-              <img [src]="movie.Poster !== 'N/A' ? movie.Poster : 
-                          'https://via.placeholder.com/400'" [alt]="movie.Title" />
-          </div>
-          <div>
-              <span>{{ movie.Type }}</span>
-              <h3>{{ movie.Title }}</h3>
-          </div>
-      </div>
-  </div>
-  <ng-template #noMovies>
-      <div class="empty">
-          <h2>No Movies found</h2>
-      </div>
-  </ng-template>
-</div> -->
 <div class="app">
   <h1>Hello This is Mahir's Website</h1>
   <h3>Movie Application using Angular</h3>
@@ -40,8 +9,7 @@
       [(ngModel)]="searchTerm"
       (keyup.enter)="onSearch()"
     />
-    <img
-      src="https://media.geeksforgeeks.org/wp-content/uploads/20230626112934/search.png"
+    <img="https://media.geeksforgeeks.org/wp-content/uploads/20230626112934/search.png"
       alt="search icon"
       (click)="onSearch()"
     />
